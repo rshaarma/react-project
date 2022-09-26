@@ -15,10 +15,10 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         {/* <Route path="/" element={<Layout />}> */}
-        <Route index element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/search" element={<Search />} />
         <Route path="/plotly" element={<Plotly />} />
-        <Route path="*" element={<NoPage />} />
+        <Route path="*" element={<Home />} />
         {/* </Route> */}
       </Routes>
     </BrowserRouter>
